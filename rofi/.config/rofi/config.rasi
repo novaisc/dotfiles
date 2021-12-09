@@ -1,6 +1,5 @@
 configuration {
  modi: "window,drun,ssh,combi";
- theme: "Monokai";
  font: "Roboto 14";
  combi-modi: "window,drun,ssh";
  }
