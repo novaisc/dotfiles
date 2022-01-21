@@ -197,6 +197,10 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #background
 exec --no-startup-id feh --bg-fill Pictures/wallhaven-e7ek7k.jpg
 
+
+#start sxhkd
+exec_always sxhkd
+
 #keyboard layout
 exec --no-startup-id setxkbmap -layout br
 #terminal

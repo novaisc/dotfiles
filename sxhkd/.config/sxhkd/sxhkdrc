@@ -1,0 +1,9 @@
+#restart hotkey damon
+super + shift + r
+	killandnotify "sxhkd" "Config realoaded" && sxhkd &
+
+XF86MonBrightnessUp
+	changebrightness up
+
+XF86MonBrightnessDown
+	changebrightness down

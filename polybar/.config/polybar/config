@@ -292,10 +292,10 @@ type = internal/pulseaudio
 
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <label-volume> 
-label-volume =  %percentage%% 
+label-volume = volume %percentage%% 
 label-volume-foreground = ${root.foreground}
 
-label-muted = 
+label-muted =  muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -378,7 +378,7 @@ full-at = 98
 
 format-charging =  <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-full =  <label-full>
+format-full = battery <label-full>
 
 label-charging = %percentage%%
 

@@ -22,7 +22,7 @@ set softtabstop=2
 "set mouse=a
 set background=dark
 "set inccommand=split
-set linebreak
+"set linebreak
 
 lua require("plugin-config")
 
