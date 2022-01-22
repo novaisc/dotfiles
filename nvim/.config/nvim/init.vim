@@ -9,6 +9,7 @@ luafile $HOME/.config/nvim/lua/lsp/css-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/html-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/json-ls.lua
 luafile $HOME/.config/nvim/lua/lsp/texlab.lua
+luafile $HOME/.config/nvim/lua/lsp/py_lsp.lua
 
 set clipboard+=unnamedplus
 set hidden

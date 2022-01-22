@@ -53,6 +53,9 @@ nnoremap  <C-l> :tabn<CR>
 nnoremap  <C-h> :tabp<CR>
 nnoremap  <C-y> :tabnew<CR>
 
+" nerdcommenter
+
+
 " editor color
 colorscheme gruvbox
 let NERDTreeShowBookmarks=1
