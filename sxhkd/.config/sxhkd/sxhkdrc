@@ -3,7 +3,7 @@ super + shift + r
 	killandnotify "sxhkd" "Config realoaded" && sxhkd &
 
 XF86MonBrightnessUp
-	changebrightness up
+	light -A 10
 
 XF86MonBrightnessDown
-	changebrightness down
+	light -U 10

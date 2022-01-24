@@ -101,7 +101,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
 
--- -- set a formatter, this will override the language server formatting capabilities (if it exists)
+-- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { command = "black", filetypes = { "python" } },
@@ -136,13 +136,13 @@ formatters.setup {
 -- }
 
 -- Additional Plugins
-lvim.plugins = {
-    {"folke/tokyonight.nvim"},
-    {
-      "folke/trouble.nvim",
-      cmd = "TroubleToggle",
-    },
-}
+-- lvim.plugins = {
+--     {"folke/tokyonight.nvim"},
+--     {
+--       "folke/trouble.nvim",
+--       cmd = "TroubleToggle",
+--     },
+-- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
