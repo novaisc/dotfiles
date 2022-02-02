@@ -64,7 +64,7 @@ modules-left = bspwm i3
 modules-center = date
 modules-right = pulseaudio battery wlan
 
-;tray-position = right
+tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
@@ -370,7 +370,7 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging =  <label-charging>
+format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity>   <label-discharging>
 format-full = <label-full>
 
@@ -386,6 +386,9 @@ ramp-capacity-4 = 
 ramp-capacity-0-foreground = 
 ramp-capacity-1-foreground = 
 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
 
 ;type = internal/battery
 ;battery = BAT0

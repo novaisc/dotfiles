@@ -108,4 +108,4 @@ export EDITOR=$HOME/.local/bin/lvim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias v='lvim'
+alias lv='lvim'
