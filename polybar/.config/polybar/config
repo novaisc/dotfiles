@@ -51,7 +51,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Ubuntu Nerd Font:pixelsize=12;2
+font-0 = FiraCode Nerd Font:pixelsize=12;2
 ; font-1 = fixed:pixelsize=10;1
 ; font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 ; font-3 = siji:pixelsize=10;1
@@ -64,7 +64,7 @@ modules-left = bspwm i3
 modules-center = date
 modules-right = pulseaudio battery wlan
 
-tray-position = right
+;tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 

@@ -186,6 +186,14 @@ bindsym $mod+r mode "resize"
 #MY SETTINGS --------------------------------------------------------------------------->
 bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi" 
 
+#bindsym $mod+Return exec alacritty 
+
+#terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+#lock screen
+bindsym $mod+shift+x exec betterlockscreen -l dim
+
 exec --no-startup-id dropbox
 exec --no-startup-id redshift-gtk
 exec --no-startup-id flameshot
@@ -202,10 +210,7 @@ exec --no-startup-id feh --bg-fill Pictures/wallhaven-e7ek7k.jpg
 exec_always sxhkd
 
 #keyboard layout
-exec --no-startup-id setxkbmap -layout br
-#terminal
-#bindsym $mod+Return exec alacritty 
-bindsym $mod+Return exec i3-sensible-terminal
+exec_always --no-startup-id setxkbmap -layout br
 
 for_window [class="^.*"] border pixel 0
 gaps inner 14
@@ -213,8 +218,8 @@ gaps outer -2
 
 smart_gaps on
 
-set $firstMonitor eDP1
-set $secondMonitor HDMI1
+set $firstMonitor HDMI-1
+set $secondMonitor eDP1
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor

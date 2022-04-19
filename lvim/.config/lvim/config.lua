@@ -58,7 +58,8 @@ lvim.builtin.dashboard.active = true
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.show_icons.git = 0
+lvim.builtin.nvimtree.show_icons.git = 1
+lvim.builtin.project.detection_methods = { ".git", "lsp" }
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -69,6 +70,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "lua",
   "python",
   "typescript",
+  "tsx",
   "css",
   "rust",
   "java",
@@ -101,21 +103,21 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
 
--- set a formatter, this will override the language server formatting capabilities (if it exists)
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
-  { command = "black", filetypes = { "python" } },
-  { command = "isort", filetypes = { "python" } },
-  {
-    -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-    command = "prettier",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--print-with", "100" },
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "typescript", "typescriptreact" },
-  },
-}
+-- -- set a formatter, this will override the language server formatting capabilities (if it exists)
+-- local formatters = require "lvim.lsp.null-ls.formatters"
+-- formatters.setup {
+--   { command = "black", filetypes = { "python" } },
+--   { command = "isort", filetypes = { "python" } },
+--   {
+--     -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+--     command = "prettier",
+--     ---@usage arguments to pass to the formatter
+--     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+--     extra_args = { "--print-with", "100" },
+--     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+--     filetypes = { "typescript", "typescriptreact" },
+--   },
+-- }
 
 -- -- set additional linters
 -- local linters = require "lvim.lsp.null-ls.linters"
