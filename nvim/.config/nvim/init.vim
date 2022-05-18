@@ -16,15 +16,15 @@ set hidden
 set number
 set relativenumber
 set autoindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set smarttab
-set softtabstop=2
+"set softtabstop=2
 "set mouse=a
 set background=dark
 "set inccommand=split
 "set linebreak
-
+set term=xterm-256color
 lua require("plugin-config")
 
 inoremap kj <esc>
