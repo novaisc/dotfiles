@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'mfussenegger/nvim-jdtls' 
 	"snipets
 	Plug 'sirver/UltiSnips'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	"comenter
 	Plug 'preservim/nerdcommenter'
 	Plug 'Mofiqul/dracula.nvim'

@@ -186,13 +186,14 @@ bindsym $mod+r mode "resize"
 #MY SETTINGS --------------------------------------------------------------------------->
 bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi" 
 
-#bindsym $mod+Return exec alacritty 
 
 #terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty 
 
 #lock screen
 bindsym $mod+shift+x exec betterlockscreen -l dim
+bindsym $mod+p exec brave
 
 exec --no-startup-id dropbox
 exec --no-startup-id redshift-gtk
