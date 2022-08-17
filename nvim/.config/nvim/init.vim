@@ -1,15 +1,15 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/vim-plug/lsp-config.vim
+source $HOME/dotfiles/nvim/.config/nvim/vim-plug/plugins.vim
+source $HOME/dotfiles/nvim/.config/nvim/vim-plug/lsp-config.vim
 
 "Lua Plugins
-luafile $HOME/.config/nvim/lua/compe-config.lua
-luafile $HOME/.config/nvim/lua/lsp/tsserver-ls.lua
-luafile $HOME/.config/nvim/lua/lsp/clangd-ls.lua
-luafile $HOME/.config/nvim/lua/lsp/css-ls.lua
-luafile $HOME/.config/nvim/lua/lsp/html-ls.lua
-luafile $HOME/.config/nvim/lua/lsp/json-ls.lua
-luafile $HOME/.config/nvim/lua/lsp/texlab.lua
-luafile $HOME/.config/nvim/lua/lsp/py_lsp.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/compe-config.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/tsserver-ls.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/clangd-ls.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/css-ls.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/html-ls.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/json-ls.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/texlab.lua
+"luafile $HOME/dotfiles/nvim/.config/nvim/lua/lsp/py_lsp.lua
 
 set clipboard+=unnamedplus
 set hidden
@@ -24,8 +24,7 @@ set smarttab
 set background=dark
 "set inccommand=split
 "set linebreak
-set term=xterm-256color
-lua require("plugin-config")
+"lua require("plugin-config")
 
 inoremap kj <esc>
 
