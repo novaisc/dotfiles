@@ -186,7 +186,6 @@ bindsym $mod+r mode "resize"
 #MY SETTINGS --------------------------------------------------------------------------->
 bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi" 
 
-
 #terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec kitty 
