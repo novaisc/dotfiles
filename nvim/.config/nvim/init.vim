@@ -27,4 +27,3 @@ set background=dark
 "lua require("plugin-config")
 
 inoremap kj <esc>
-
