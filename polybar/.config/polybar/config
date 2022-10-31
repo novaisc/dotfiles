@@ -64,7 +64,7 @@ modules-left = bspwm i3
 modules-center = date
 modules-right = pulseaudio battery wlan
 
-tray-position = right
+;tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
