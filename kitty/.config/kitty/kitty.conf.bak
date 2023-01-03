@@ -10,9 +10,3 @@ disable_ligatures always
 map kitty_mod+] next_tab
 map kitty_mod+[  previous_tab
 default_pointer_shape beam
-
-
-# BEGIN_KITTY_THEME
-# Afterglow
-include current-theme.conf
-# END_KITTY_THEME
