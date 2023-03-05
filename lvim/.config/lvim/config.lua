@@ -184,3 +184,4 @@ lvim.builtin.treesitter.highlight.enable = true
 --   end,
 -- })
 lvim.keys.insert_mode["kj"] = "<esc>"
+vim.opt.relativenumber = true -- set relative numbered lines
