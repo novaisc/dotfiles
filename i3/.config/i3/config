@@ -203,13 +203,15 @@ bindsym $mod+p exec brave
 exec --no-startup-id dropbox
 exec --no-startup-id redshift-gtk
 exec --no-startup-id flameshot
-bindsym Print exec flameshot gui
+bindsym Print exec gnome-screenshot --interactive
+#bindsym Print exec flameshot gui
+#bindsym Print exec coreshot -s
 
 #Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #background
-exec --no-startup-id feh --bg-fill Pictures/wallhaven-exolek.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallhaven-exolek.jpg
 
 #start sxhkd
 exec_always sxhkd

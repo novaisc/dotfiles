@@ -89,6 +89,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:"/home/novaisc/android-studio/bin/studio.sh"
+export LD_LIBRARY_PATH="/usr/lib64/"
+export PATH=$PATH:$LD_LIBRARY_PATH
 
 #EDITOR
 export EDITOR=$HOME/.local/bin/lvim
@@ -119,3 +121,29 @@ export EDITOR=$HOME/.local/bin/lvim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lv='lvim'
+alias vm='qemu-system-x86_64 -hda arch_disk.raw -m 4G -nographic \
+        -kernel /home/novaisc/myWorkspace/shared/linux/arch/x86_64/boot/bzImage \
+        -append "root=/dev/sda rw console=ttyS0 loglevel=5" \
+        --enable-kvm \
+        -fsdev local,id=fs1,path=/home/novaisc/myWorkspace/shared,security_model=none \
+        -device virtio-9p-pci,fsdev=fs1,mount_tag=shared_folder'
+# Enable bash completion for zsh
+autoload bashcompinit && bashcompinit
+# kw
+source /home/novaisc/.local/lib/kw/bash_autocomplete.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
