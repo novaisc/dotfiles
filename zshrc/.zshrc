@@ -81,7 +81,7 @@ source $ZSH/oh-my-zsh.sh
 #PATH
 export PATH=$PATH:/home/novaisc/.local/bin:/usr/local/android-studio/bin
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$JAVA_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -131,19 +131,3 @@ alias vm='qemu-system-x86_64 -hda arch_disk.raw -m 4G -nographic \
 autoload bashcompinit && bashcompinit
 # kw
 source /home/novaisc/.local/lib/kw/bash_autocomplete.sh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-        . "/usr/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
