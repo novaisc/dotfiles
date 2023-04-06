@@ -81,16 +81,16 @@ source $ZSH/oh-my-zsh.sh
 #PATH
 export PATH=$PATH:/home/novaisc/.local/bin:/usr/local/android-studio/bin
 
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
-export ANDROID_HOME=~/Android/Sdk
-export PATH=$PATH:$JAVA_HOME
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:"/home/novaisc/android-studio/bin/studio.sh"
-export LD_LIBRARY_PATH="/usr/lib64/"
-export PATH=$PATH:$LD_LIBRARY_PATH
+#export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+#export ANDROID_HOME=~/Android/Sdk
+#export PATH=$PATH:$JAVA_HOME
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export PATH=$PATH:"/home/novaisc/android-studio/bin/studio.sh"
+# export LD_LIBRARY_PATH="/usr/lib64/"
+# export PATH=$PATH:$LD_LIBRARY_PATH
 
 #EDITOR
 export EDITOR=$HOME/.local/bin/lvim
