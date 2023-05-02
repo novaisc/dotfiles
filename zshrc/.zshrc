@@ -121,13 +121,3 @@ export EDITOR=$HOME/.local/bin/lvim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lv='lvim'
-alias vm='qemu-system-x86_64 -hda arch_disk.raw -m 4G -nographic \
-        -kernel /home/novaisc/myWorkspace/shared/linux/arch/x86_64/boot/bzImage \
-        -append "root=/dev/sda rw console=ttyS0 loglevel=5" \
-        --enable-kvm \
-        -fsdev local,id=fs1,path=/home/novaisc/myWorkspace/shared,security_model=none \
-        -device virtio-9p-pci,fsdev=fs1,mount_tag=shared_folder'
-# Enable bash completion for zsh
-autoload bashcompinit && bashcompinit
-# kw
-source /home/novaisc/.local/lib/kw/bash_autocomplete.sh
