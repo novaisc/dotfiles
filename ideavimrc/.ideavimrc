@@ -1,1 +1,8 @@
-source ~/dotfiles/ideavimrc/idea.vim
+imap kj <Esc> 
+set idearefactormode=keep
+set number relativenumber
+
+let mapleader = " "
+
+map <Leader>bb :action PreviousTab<CR>
+map <Leader>nn :action NextTab<CR>
