@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 
 #PATH
 export PATH=$PATH:/home/novaisc/.local/bin:/usr/local/android-studio/bin
+export TESSDATA_PREFIX=/usr/share/tessdata/
 
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 #export ANDROID_HOME=~/Android/Sdk
@@ -121,3 +122,4 @@ export EDITOR=$HOME/.local/bin/lvim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lv='lvim'
+alias nv='nvim'

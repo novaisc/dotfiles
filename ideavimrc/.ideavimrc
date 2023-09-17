@@ -5,4 +5,4 @@ set number relativenumber
 let mapleader = " "
 
 map <Leader>bb :action PreviousTab<CR>
-map <Leader>nn :action NextTab<CR>
+map <Leader>bn :action NextTab<CR>
