@@ -15,6 +15,9 @@ vim.opt.expandtab = true
 --vim.wo.number = true
 vim.wo.relativenumber = true
 
+vim.opt.timeoutlen = 500   -- time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.ttimeoutlen = 10   -- time in milliseconds to wait for a key code sequence to complete
+vim.opt.updatetime = 100   -- faster completion
 
 vim.keymap.set('i', 'kj', '<Esc>', {noremap = true})
 
@@ -36,3 +39,4 @@ vim.api.nvim_set_keymap('n', '<leader>bb', ':tabprev<CR>', {noremap = true, sile
 vim.api.nvim_set_keymap('n', '<leader>bn', ':tabnext<CR>', {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap('n', '<leader>c', ':tabclose<CR>', {noremap = true})
+

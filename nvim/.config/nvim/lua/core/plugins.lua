@@ -18,13 +18,37 @@ require("lazy").setup({
   "nvim-lualine/lualine.nvim",
   "nvim-treesitter/nvim-treesitter",
   "NvChad/nvim-colorizer.lua",
+  { "b0o/SchemaStore.nvim" },
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
+  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+  {'rafamadriz/friendly-snippets'},
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.3',
+    "hrsh7th/nvim-cmp", -- Autocompletion
+    config = function()
+      require("core.plugin_config.nvim-cmp")
+    end,
+    dependencies = {
+      {
+        "L3MON4D3/LuaSnip",
+        config = function()
+          require("core.plugin_config.luasnip")
+        end,
+      },
+      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-cmdline",
+      "hrsh7th/cmp-emoji",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-nvim-lua",
+      "hrsh7th/cmp-path",
+    },
+    event = 'InsertEnter',
+  },
+  {'nvim-telescope/telescope.nvim', tag = '0.1.3',
 -- or                              , branch = '0.1.x',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
@@ -36,8 +60,7 @@ require("lazy").setup({
 	  },
     { "williamboman/mason-lspconfig.nvim" },
 	  { "neovim/nvim-lspconfig" }, -- Required
-    {
-		"jose-elias-alvarez/null-ls.nvim",
+    {	"jose-elias-alvarez/null-ls.nvim",
 		dependencies = {
 			{ "jayp0521/mason-null-ls.nvim" },
 		},
