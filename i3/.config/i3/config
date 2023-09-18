@@ -211,7 +211,7 @@ bindsym Print exec flameshot gui
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #background
-exec --no-startup-id feh --bg-fill ~/Pictures/boat.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallhaven-o59gvl.png
 
 #start sxhkd
 exec_always sxhkd
