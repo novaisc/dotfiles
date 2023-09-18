@@ -35,8 +35,8 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {noremap = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true})
 
 -- navigate between tabs
-vim.api.nvim_set_keymap('n', '<leader>bb', ':tabprev<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<leader>bn', ':tabnext<CR>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('n', '<leader>bb', ':tabprev<CR>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('n', '<leader>bn', ':tabnext<CR>', {noremap = true, silent = true})
 
-vim.api.nvim_set_keymap('n', '<leader>c', ':tabclose<CR>', {noremap = true})
+-- vim.api.nvim_set_keymap('n', '<leader>c', ':tabclose<CR>', {noremap = true})
 

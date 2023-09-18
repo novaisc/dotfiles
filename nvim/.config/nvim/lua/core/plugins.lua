@@ -12,22 +12,43 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- theme
   "morhetz/gruvbox",
+  -- file manager
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
+  -- line on bottom of the screen
   "nvim-lualine/lualine.nvim",
+  --highlight
   "nvim-treesitter/nvim-treesitter",
+  --colorizer
   "NvChad/nvim-colorizer.lua",
   { "b0o/SchemaStore.nvim" },
+  -- auto pairs () {} []
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
-  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
-  {'rafamadriz/friendly-snippets'},
+
+  -- manage buffers
   {
-    "hrsh7th/nvim-cmp", -- Autocompletion
+    "moll/vim-bbye", -- Delete buffers without closing windows or messing up your layout
+    config = function()
+      require("core.plugin_config.vim-bbye")
+    end,
+    event = "BufWinEnter",
+  },
+
+  -- manage tabs
+  { "akinsho/bufferline.nvim",     version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+
+  -- snippets
+  { 'rafamadriz/friendly-snippets' },
+
+  -- autocompletion
+  {
+    "hrsh7th/nvim-cmp",
     config = function()
       require("core.plugin_config.nvim-cmp")
     end,
@@ -48,21 +69,27 @@ require("lazy").setup({
     },
     event = 'InsertEnter',
   },
-  {'nvim-telescope/telescope.nvim', tag = '0.1.3',
--- or                              , branch = '0.1.x',
-      dependencies = { 'nvim-lua/plenary.nvim' }
+
+  -- search
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.3', -- or, branch = '0.1.x',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
+
+  -- lsp
+  {
+    "williamboman/mason.nvim",
+    build = function()
+      pcall(vim.cmd, "MasonUpdate")
+    end,
+  },
+  { "williamboman/mason-lspconfig.nvim" },
+  { "neovim/nvim-lspconfig" }, -- Required
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    dependencies = {
+      { "jayp0521/mason-null-ls.nvim" },
     },
-    { -- Optional
-      "williamboman/mason.nvim",
-          build = function()
-            pcall(vim.cmd, "MasonUpdate")
-          end,
-	  },
-    { "williamboman/mason-lspconfig.nvim" },
-	  { "neovim/nvim-lspconfig" }, -- Required
-    {	"jose-elias-alvarez/null-ls.nvim",
-		dependencies = {
-			{ "jayp0521/mason-null-ls.nvim" },
-		},
-	},
+  },
 })
