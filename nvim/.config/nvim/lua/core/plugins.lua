@@ -21,8 +21,6 @@ require("lazy").setup({
   "nvim-lualine/lualine.nvim",
   --highlight
   "nvim-treesitter/nvim-treesitter",
-  --colorizer
-  "NvChad/nvim-colorizer.lua",
   { "b0o/SchemaStore.nvim" },
   -- auto pairs () {} []
   {
@@ -68,6 +66,35 @@ require("lazy").setup({
       "hrsh7th/cmp-path",
     },
     event = 'InsertEnter',
+  },
+
+  --markdown-preview
+  {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+    setup = function()
+      vim.g.mkdp_filetypes = {
+        "markdown" }
+    end,
+    ft = {
+      "markdown" },
+  },
+
+  -- comment
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
+  },
+
+  {
+    "rcarriga/nvim-notify", -- Beautiful notifications
+    config = function()
+      require("core.plugin_config.notify")
+    end,
+    dependencies = { "nvim-telescope/telescope.nvim" },
   },
 
   -- search
