@@ -1,8 +1,21 @@
-imap kj <Esc> 
-set idearefactormode=keep
 set number relativenumber
+set idearefactormode=keep
+set ideajoin
 
 let mapleader = " "
 
-map <Leader>bb :action PreviousTab<CR>
-map <Leader>bn :action NextTab<CR>
+imap kj <Esc>
+
+let mapleader = " "
+set timeoutlen=1000
+
+nmap <Tab> :action NextTab<CR>
+nmap <S-Tab> :action PreviousTab<CR>
+
+nmap <C-w> :tabclose<CR>
+
+set NERDTree
+
+nmap <leader>e :NERDTreeToggle<CR>
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'

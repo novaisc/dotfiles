@@ -28,6 +28,7 @@ mason_lspconfig.setup_handlers {
     elseif server_name == 'tsserver' then
       config = u.merge(config, require('lsp.servers.tsserver'))
     elseif server_name == 'jdtls' then
+      -- config = u.merge(config, require('lsp.servers.jdtls'))
       return
     end
 

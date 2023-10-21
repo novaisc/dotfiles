@@ -97,6 +97,11 @@ require("lazy").setup({
     dependencies = { "nvim-telescope/telescope.nvim" },
   },
 
+  -- Java Support
+  {
+    "mfussenegger/nvim-jdtls",
+  },
+
   -- search
   {
     'nvim-telescope/telescope.nvim',
@@ -110,6 +115,9 @@ require("lazy").setup({
     build = function()
       pcall(vim.cmd, "MasonUpdate")
     end,
+  },
+  {
+    "mason-org/mason-registry"
   },
   { "williamboman/mason-lspconfig.nvim" },
   { "neovim/nvim-lspconfig" }, -- Required
