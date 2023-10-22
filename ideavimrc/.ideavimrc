@@ -13,9 +13,9 @@ nmap <Tab> :action NextTab<CR>
 nmap <S-Tab> :action PreviousTab<CR>
 
 nmap <C-w> :tabclose<CR>
+nmap <S-w> :tabclose<CR>
 
 set NERDTree
 
-nmap <leader>e :NERDTreeToggle<CR>
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
