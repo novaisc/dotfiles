@@ -217,7 +217,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallhaven-kxj3l1.jpg
 exec_always sxhkd
 
 #keyboard layout
-exec_always --no-startup-id setxkbmap -layout br
+#exec_always --no-startup-id setxkbmap -layout br
 
 for_window [class=".*"] border pixel 2
 #for_window [class="^.*"] border pixel 2

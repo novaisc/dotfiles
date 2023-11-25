@@ -9,7 +9,7 @@ end
 
 local function diagnostics_indicator(num, _, diagnostics, _)
   local result = {}
-  local symbols = { error = "", warning = "", info = "" }
+  local symbols = { error = "", warning = "", info = "" }
   for name, count in pairs(diagnostics) do
     if symbols[name] and count > 0 then
       table.insert(result, symbols[name] .. " " .. count)
@@ -41,7 +41,7 @@ bufferline.setup {
     tab_size = 20,
     right_mouse_command = "vert sbuffer %d", -- can be a string | function, see "Mouse actions"
     diagnostics = "nvim_lsp",
-    buffer_close_icon = '',
+    buffer_close_icon = '',
     modified_icon = '●',
     close_icon = '',
     left_trunc_marker = '',
