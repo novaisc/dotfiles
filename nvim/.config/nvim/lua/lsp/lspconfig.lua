@@ -13,7 +13,7 @@ local default_config = require('lsp.servers.default')
 local config = default_config
 
 mason_lspconfig.setup {
-  ensure_installed = { "clangd", "tsserver", "html", "cssls", "jsonls", "jdtls" },
+  ensure_installed = { "clangd", "tsserver", "html", "cssls", "jsonls", "jdtls", "pyright"  },
   automatic_installation = false, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 }
 

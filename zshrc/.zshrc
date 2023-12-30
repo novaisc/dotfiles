@@ -93,9 +93,6 @@ export PATH=$PATH:$JAVA_HOME
 # export LD_LIBRARY_PATH="/usr/lib64/"
 # export PATH=$PATH:$LD_LIBRARY_PATH
 
-#EDITOR
-export EDITOR=$HOME/.local/bin/lvim
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
