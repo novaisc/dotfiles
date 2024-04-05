@@ -13,7 +13,7 @@ local default_config = require('lsp.servers.default')
 local config = default_config
 
 mason_lspconfig.setup {
-  ensure_installed = { "clangd", "tsserver", "html", "cssls", "jsonls", "jdtls", "pyright"  },
+  ensure_installed = { "clangd", "tsserver", "html", "cssls", "jsonls", "pyright",},
   automatic_installation = false, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 }
 
@@ -27,8 +27,8 @@ mason_lspconfig.setup_handlers {
       config = u.merge(config, require('lsp.servers.clangd'))
     elseif server_name == 'tsserver' then
       config = u.merge(config, require('lsp.servers.tsserver'))
-    elseif server_name == 'jdtls' then
-      -- config = u.merge(config, require('lsp.servers.jdtls'))
+    -- elseif server_name == 'pyright' then
+    --   config = u.merge(config, require('lsp.servers.pyright'))
       return
     end
 

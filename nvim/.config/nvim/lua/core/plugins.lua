@@ -127,4 +127,5 @@ require("lazy").setup({
       { "jayp0521/mason-null-ls.nvim" },
     },
   },
+  { "MunifTanjim/prettier.nvim" },
 })

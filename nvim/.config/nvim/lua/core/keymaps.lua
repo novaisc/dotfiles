@@ -15,6 +15,7 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 --vim.wo.number = true
+vim.wo.number = true  -- Enable absolute line numbers
 vim.wo.relativenumber = true
 
 vim.opt.timeoutlen = 500   -- time to wait for a mapped sequence to complete (in milliseconds)
