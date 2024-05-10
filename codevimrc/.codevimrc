@@ -3,7 +3,3 @@ inoremap <Tab> <Esc>gt
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 inoremap <S-Tab> <Esc>gT
-
-" Alt+1 to toggle Explorer in VSCode
-nnoremap <A-1> :VSCodeCommand explorerView.toggle<CR>
-inoremap <A-1> <Esc>:VSCodeCommand explorerView.toggle<CR>

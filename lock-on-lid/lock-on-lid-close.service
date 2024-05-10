@@ -1,0 +1,12 @@
+[Unit]
+Description=Lock the screen when the lid is closed
+Before=sleep.target
+
+[Service]
+User=novaisc
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/bash -c '/usr/bin/i3lock -t -i /home/novaisc/Pictures/wallhaven-exrqrr.png'
+
+[Install]
+WantedBy=sleep.target
