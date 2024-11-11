@@ -84,6 +84,8 @@ export TESSDATA_PREFIX=/usr/share/tessdata/
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
 export PATH=$PATH:$JAVA_HOME
+
+export PYTHONPATH=/usr/local/lib/python3.11/site-packages/
 # export ANDROID_HOME=/home/novaisc/Android/Sdk/
 # export PATH=$PATH:$ANDROID_HOME
 # export PATH=$PATH:$ANDROID_HOME/tools
