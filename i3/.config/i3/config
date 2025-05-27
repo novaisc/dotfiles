@@ -48,7 +48,7 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -184,8 +184,8 @@ bindsym $mod+r mode "resize"
 #}
 
 #MY SETTINGS --------------------------------------------------------------------------->
-bindsym $mod+d --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi" 
-bindsym $mod+space exec /home/novaisc/dotfiles/scripts/toggle_keyboard.sh
+bindsym $mod+d exec /home/novaisc/dotfiles/scripts/toggle_keyboard.sh
+bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi" 
 
 #terminal
 #bindsym $mod+Return exec i3-sensible-terminal
@@ -213,7 +213,7 @@ bindsym Print exec flameshot gui
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #background
-exec --no-startup-id feh --bg-fill /home/novaisc/Pictures/wallhaven-kxj3l1.jpg
+exec --no-startup-id feh --bg-fill /home/novaisc/Pictures/wallhaven-1pv19v.png
 
 #start sxhkd
 exec_always sxhkd
